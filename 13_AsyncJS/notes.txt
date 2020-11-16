@@ -1,0 +1,64 @@
+Asynchronous Programming
+
+
+Syncronous Programming
+posts = loadPostsSync()
+// wait till posts are fetcched
+// do smth w posts
+
+
+doTheNextThing() // has to wait until posts load 
+
+What is Asynchronous Programming?
+eg:
+
+loadPostsAsync(function(){
+    // wait till posts are fetcched
+    // do smth with posts 
+})
+
+doTheNextThing() // doesnt have to wait until posts load
+
+
+Most async code will be part of an API of library
+
+- XMLHttpRequest & Fetch 
+- jquery ajax, axios, other http libraries 
+- node.js filesystem
+
+few ways to work w async code
+- callbacks
+- promises
+- async/await 
+
+
+What is AJAX ?
+- Asynchronous javascript & xml 
+- its a set of web technologies to : 
+    send & receive data asynchronously 
+    does not interfere w current page
+    (json has replaced xml for the most part). 
+
+- make async requests in the backgrnd
+- no page reload
+- fetch data 
+- very interactive 
+
+
+XMLHttpRequest (XHR) object
+- API in the form of an object 
+- CORE technology in ajax 
+- provided by the browsers js env
+
+- its methods transfer data btwn client and server
+- can be used w other protocols than http 
+- can work w data other than xml (json, plain text)
+
+
+Libraries & Other methods 
+- Fetch API (part of browser, core JS)
+- axios 
+- superagent
+-jquery
+- node http 
+
