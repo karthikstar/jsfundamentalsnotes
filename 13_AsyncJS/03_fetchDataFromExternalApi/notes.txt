@@ -1,0 +1,39 @@
+What is An API ? 
+- Application Programming Interfrace
+- Contract provided by one piece of software to another
+- structured request and response
+ - we just worked with an API that takes a request and responds with jokes 
+
+ REST APIS 
+ - Representational State Transfer
+ - Architectural style for designing networked applications
+ - replies on a stateless, client-server protocol, almost always http
+ - Treats server objects as resources that can be created / destroyed
+ -can be used by virtually any programming language
+ - all apis have their own rules and structure
+
+
+ HTTP Requests
+ - GET : Retrieve data from a speicified resource
+ - POST : Submit data to be processed to a specifiied resource e.g add a user
+ - PUT: Update a specified resource
+ - DELETE : Delete a specified resource 
+
+ -HEAD : Same as GET but does not return a body
+ - OPTIONS : Returns the supported http methods
+ - PATCH : Update partial resources 
+
+
+ API ENDPOINTS - urls that we access to do certain things 
+
+- common end pts for GET : 
+GET https://url.com/api/users - get all users
+GET https://url.com/api/users/1 - get single user 
+
+With post, put, and delete requets, we need to send data along w these requests
+
+POST https://url.com/api/users - ADD USER
+
+PUT https://url.com/api/users/1 - update user
+
+DELETE https://url.com/api/users/1 - delete user

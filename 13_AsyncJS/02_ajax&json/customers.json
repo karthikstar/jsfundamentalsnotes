@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "name": "John Doe",
+        "company":"123 Designs",
+        "phone":"444-555-6666"
+    },
+    {
+        "id" : 2,
+        "name": "Steve Rogers",
+        "company":"Hello Prod",
+        "phone":"132-555-6666"
+    },
+    {
+        "id" : 3,
+        "name": "Tiara Doe",
+        "company":"123 Inception",
+        "phone":"999-555-2323"
+    }
+    
+            
+]
