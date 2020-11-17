@@ -30,7 +30,7 @@ const data = {
 
 // Create Post
 http.post('http://jsonplaceholder.typicode.com/posts',data,function(err, post){
-        if (err){
+    if (err){
         console.log(err);
     } else {
         console.log(post);
