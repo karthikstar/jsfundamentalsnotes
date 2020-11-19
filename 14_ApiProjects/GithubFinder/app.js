@@ -1,6 +1,8 @@
 // Init gihub
 const github = new Github;
 
+// Init UI 
+const ui = new UI
 // Search input 
 
 const searchUser = document.getElementById('searchUser');
@@ -21,12 +23,11 @@ searchUser.addEventListener('keyup',(e) => {
 
                 } else {
                     // show profile
-                    console.log(data);
-
+                    ui.showProfile(data.profile);
                 }
             })
     } else {
         // Clear the profile from UI
-        
+
     }
 })
