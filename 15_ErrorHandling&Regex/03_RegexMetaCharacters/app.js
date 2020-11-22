@@ -22,7 +22,7 @@ re = /^hello$/i; // must start with hello and end with hello - hello hello doesn
 
 re = /^h.llo$/i; // matches with any instances of h_llo where there can be any ONE character filling in the index 1. eg hallo, hxllo, hmllo
 
-re = /h*llo/i // * matches any character 0 or more times.. means there can be 0 or more characters between h and llo and still be a match. eg heello , hllo, hxxxxxllo, hallo hi
+re = /h*llo/i; // * matches any character 0 or more times.. means there can be 0 or more characters between h and llo and still be a match. eg heello , hllo, hxxxxxllo, hallo hi
 
 re = /gre?a?y/i; // ? - optional character. e and a are optional. its matches can be grey, gray, gry.
 
@@ -43,10 +43,10 @@ re = /^[GF]ray/i;
 
 re = /^[A-Z]ray/; // Matches any upper case ltter. eg Pray, Zray, Xray
 
-re = /^[a-z]ray/ // Matches any lowercase letter. eg xray,pray
+re = /^[a-z]ray/; // Matches any lowercase letter. eg xray,pray
 
 
-re = /^[A-Za-z]ray/ // matches any letter , uppercase or lowercase, Pray, xray
+re = /^[A-Za-z]ray/; // matches any letter , uppercase or lowercase, Pray, xray
 
 re = /[0-9]ray/; // match any digit . eg 9ray, 2ray. fyi 10ray works as well as it will read from 2nd index.
 
@@ -62,9 +62,9 @@ re = /Hel{2,4}o/i; // must have exactly 2-4 ls.
 re = /Hel{2,}o/i; // must have AT LEAST 2 times/ {m} times.
 
 // Parantheses () - Grouping
-re = /([0-9]x){3}/ // () groups a number and x together, hence for a match it must have num x num x num x. mnatches 3x4x5x, 3x3x3x, 3x9x2x2x4x
+re = /([0-9]x){3}/; // () groups a number and x together, hence for a match it must have num x num x num x. mnatches 3x4x5x, 3x3x3x, 3x9x2x2x4x
 
-re = /^([0-9]x){3}$/ // match can ONLY be num x num x num x
+re = /^([0-9]x){3}$/; // match can ONLY be num x num x num x
 
 
 // Shorthand Character Classes
