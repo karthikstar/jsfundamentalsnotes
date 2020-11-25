@@ -1,0 +1,15 @@
+What is a pattern ? 
+- a reusable solution that can be applied to occuring problems in software design(Javascript applicationbs)
+
+- can also be thoighjt of as programming templates
+
+- situations vary significantly
+
+Patterns we will look at :
+- Module
+- revealing module pattern
+- singleton
+- factory
+- observer 
+- mediator
+- state 
