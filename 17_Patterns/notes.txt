@@ -13,3 +13,23 @@ Patterns we will look at :
 - observer 
 - mediator
 - state 
+
+Closure - is the local variables for a function - kept alive after the function has returned
+
+Closure - is when a function is able to remember and access its scope even when that function is executing outside its lexical scope. 
+
+Basically ut means a function which is contained in a parent scope is able to access variables in its parent scope even after its parent function has finished executin. 
+
+Javascript Patterns 
+- The traditional module pattern 
+- purpose is to create self contained code that avoids collisions
+
+Module - is a piece of self contained code 
+
+Advantage of a module 
+- avoid collisions (namespace) - in JS, diff ppl work on diff scripts and compile tgt hence we need to ensure variable names dont not get repeated and clash w each other -> creating a module will help to solve this problem and we wont need worry if our variable name is unique or not
+- reusability- we can take the piece of code and plug in anywhr as its self contained 
+- Maintainability - module is decoupled from all the other code 
+
+
+
