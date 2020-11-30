@@ -1,5 +1,6 @@
 // FACTORY PATTERNS - also called the factory method
 // way of creating interface for creating objects
+// we can let subclasses to decide which classes to instantiate
 
 // factory methods often used in apps to manage and maintain collections of objects that are different but at the same time have common characteristics
 
@@ -50,15 +51,19 @@ const SuperMembership = function(name){
 const members = []
 
 const factory = new MemberFactory();
+// console.log(factory);
+members.push(factory.createMember('bob','simple')); // instance of simple membership
+members.push(factory.createMember('jack','super')); // instance of super membership
 
-members.push(factory.createMember('bob','simple'));
-members.push(factory.createMember('jack','super'));
-members.push(factory.createMember('anne','standard'));
-members.push(factory.createMember('william','simple'));
+members.push(factory.createMember('anne','standard')); // instance of standard membership
 
-console.log(members);
+members.push(factory.createMember('william','simple')); // instance of simple membersihp
+
+// console.log(members);
 
 
 members.forEach(function(member){
     member.define();
 })
+
+// factory pattern is rly good for when we have difff objs which share some  properties and methods
