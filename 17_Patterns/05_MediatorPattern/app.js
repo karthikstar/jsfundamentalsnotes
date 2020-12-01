@@ -32,6 +32,7 @@ const Chatroom = function(){
         register:function(user){
             users[user.name] = user;
             user.chatroom = this;
+            // when we chatroom.register(user), we are adding an instance of chatrm object as a property of user
  
         },
         send: function(message,from,to){
@@ -67,3 +68,5 @@ chatroom.register(sara);
 brad.send('hello jeff',jeff);
 sara.send('hi brad', brad);
 jeff.send('hello everyone!');
+
+console.log(brad)

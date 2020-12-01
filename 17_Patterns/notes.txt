@@ -33,3 +33,8 @@ Advantage of a module
 
 
 
+++x (pre-increment) means "increment the variable; the value of the expression is the final value"
+x++ (post-increment) means "remember the original value, then increment the variable; the value of the expression is the original value"
+
+Good Resource: 
+https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns
