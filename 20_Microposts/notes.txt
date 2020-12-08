@@ -1,0 +1,62 @@
+In js, there are diff types of modules
+- common js modules - what node js, what we can use w webpack without needing babel (not part of es2015)
+
+- but we do have babel set up so we can use es2015 modules , has diff syntax
+- both are used to bring in other modules/other js files/ modules brought in using npm eg axios
+
+
+// how to bring in modules
+
+// CommonJS module Syntax - require syntax 
+
+const person = require('./mymodule1');
+// when retireving a file, make sure to use file path 
+// also.. if we npm i some modules, we can use the same above method to use that module here,eg : require('express')
+
+
+--------------------------------------------
+// Es2015 module
+import {person, sayHello} from './mymodule2';
+console.log(person.name)
+console.log(sayHello());
+
+// Alt method
+// if u want to import everything at one go
+// import * as mod from './mymodule2'
+console.log(mod.person.name)
+console.log(mod.sayHello());
+
+// if u export default in the module file, u dont have to use curly braces here 
+import greeting from './samplemod2';
+console.log(greeting);
+
+samplemod1
+// a module can be anythn, a function, a obj, an obj containing functions, or even a string
+
+module.exports = {
+// we want whatever is here to be avail to other files
+    name:'Brad',
+    email:'test@test.com'
+}
+
+samplemod2
+// es2015 modules and its syntax
+// export keyword enables this obj to be accessible outside of the file
+export const person = { 
+    name:'John',
+    age:30
+}
+
+export function sayHello(){
+    return `Hello ${person.name}`;
+}
+
+const greeting = 'hello world';
+export default greeting;
+
+
+Create Fake REST API using json server
+- https://github.com/typicode/json-server
+- npm i json-server 
+- mimics a rest api 
+
